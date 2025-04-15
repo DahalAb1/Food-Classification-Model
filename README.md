@@ -61,7 +61,7 @@ I'll mention the important libraries used in this code.
 
 ### Code Walkthrough 
 
-1. # Data Preparation
+#1. Data Preparation
 
     Checking and Creating Directories:
     The code creates a Data folder and checks for the existence of a subfolder (named pizza_steak_sushi).
@@ -92,7 +92,7 @@ I'll mention the important libraries used in this code.
 
     Ensure that the images are organized by class (each class in its own subfolder inside train and test). This organization is critical for your `DataLoader` to correctly label the images.
 
-2. # Defining the Transform Pipeline
+#2.  Defining the Transform Pipeline
 
     Transforms:
     The code uses the default transforms associated with the pretrained model (from `EfficientNet_B0_Weights`).
@@ -183,9 +183,9 @@ I'll mention the important libraries used in this code.
 
         If the file isn’t present, it downloads the image from a GitHub raw link.
 
-        Once available, it uses `pred_and_plot_image` from `helper_functions` to:
+        Once available, it uses pred_and_plot_image from helper_functions to:
 
-            *(NOTE)*: if you are not using jupiter notebooks, include `plt.show()` in `pred_and_plot_image`, [file location: going_modular->predictions.py->search for function `pred_and_plt_image`]
+            *(NOTE)*: if you are not using jupiter notebooks, include plt.show() in pred_and_plot_image, [file location: going_modular->predictions.py->search for function `pred_and_plt_image`]
 
             Read the image.
 
@@ -201,7 +201,7 @@ I'll mention the important libraries used in this code.
 
         To Test Different Scenarios:
 
-            *New Image*: If you have your own image, place it in the Data folder and update the variable `custom_image_path` in the file `python.py`:
+            *New Image*: If you have your own image, place it in the Data folder and update the variable custom_image_path in the file python.py:
 
 ```python 
 custom_image_path = Path("Data/my_own_image.jpg")
@@ -211,3 +211,13 @@ custom_image_path = Path("Data/my_own_image.jpg")
 **Multiple Tests**: For thorough testing, you might implement several images (one per class) and modify the script or run multiple times to verify each prediction.
 
 
+
+
+#### PURPOSE AND FUTURE
+
+## PURPOSE 
+I've built this model to learn how I would be able to solve classification problmes in python using pyTorch. I've been exposed to alot of technologies while working in this project. I've understood the flexibility of python and many usecases this language has. 
+
+## FUTURE
+I've got a strong mathematics background so things have been pretty digestible till this point. 
+From this point onwards I will shift my focus into the world of NLP's.  
