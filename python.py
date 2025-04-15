@@ -127,7 +127,7 @@ result = engine.train(model=model,
     train_dataloader=train_dataloader,
     test_dataloader=test_dataloader,
     optimizer=optimizer,
-    loss_fn=loss_fn,epochs=2,
+    loss_fn=loss_fn,epochs=20,
     device='cpu'
 )
 
