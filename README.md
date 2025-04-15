@@ -61,55 +61,35 @@ I'll mention the important libraries used in this code.
 
 ### Code Walkthrough 
 
-#1. Data Preparation
-
+# 1. Data Preparation
     Checking and Creating Directories:
     The code creates a Data folder and checks for the existence of a subfolder (named pizza_steak_sushi).
-
         If the directory exists: It prints a confirmation message.
-
         If it does not exist:
-
             - It creates the folder.
-
             - Downloads a ZIP file (from GitHub) containing sample images for pizza, steak, and sushi.
-
             - Unzips the content into the newly created directory.
-
             - Deletes the ZIP file afterward to conserve space.
-
     **Data Organization**:
     Your dataset (once unzipped) is expected to have further subdirectories (e.g., `train` and `test` directories). The code assigns these paths to variables (typically trdr for training data and `tedr` for `test` data).
-
     Image Recommendation for Training/Testing:
     • Use images that clearly represent each class. For example:
-
         Pizza: A image of a pizza (well-lit).
-
         Steak: A appetizing image of a steak.
-
         Sushi: Sushi pieces.
-
     Ensure that the images are organized by class (each class in its own subfolder inside train and test). This organization is critical for your `DataLoader` to correctly label the images.
 
-#2.  Defining the Transform Pipeline
-
+# 2.  Defining the Transform Pipeline 
     Transforms:
     The code uses the default transforms associated with the pretrained model (from `EfficientNet_B0_Weights`).
-
         It calls `weights.transforms()` to set up the data preprocessing pipeline that:
-
             Resizes images to the input dimensions expected by the model (e.g., 224x224).
-
             Converts images to tensors.
-
             Normalizes pixel values using the statistical parameters (mean, std) the model was originally trained on.
-
     Implementation Note:
     Use these transforms directly since they ensure that the images are in the correct format for the *EfficientNet model*. If you have new custom images for training, ensure they have sufficient resolution and are **not overly compressed.**
 
 # 3. Creating DataLoaders
-
     DataLoader Initialization:
     The function data_setup.create_dataloaders is called with:
 
