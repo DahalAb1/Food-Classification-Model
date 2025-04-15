@@ -1,3 +1,15 @@
+#### PURPOSE AND FUTURE
+
+## PURPOSE 
+** I've built this model to learn how I would be able to solve classification problmes in python using pyTorch. I've been exposed to alot of technologies while working in this project. I've understood the flexibility of python and many usecases this language has. **
+
+## FUTURE
+** I've got a strong mathematics background so things have been pretty digestible till this point. 
+From this point onwards I will shift my focus into the world of NLP's.  **
+
+
+
+
 
 ### Image Classification Project
 
@@ -190,14 +202,3 @@ custom_image_path = Path("Data/my_own_image.jpg")
 
 **Multiple Tests**: For thorough testing, you might implement several images (one per class) and modify the script or run multiple times to verify each prediction.
 
-
-
-
-#### PURPOSE AND FUTURE
-
-## PURPOSE 
-I've built this model to learn how I would be able to solve classification problmes in python using pyTorch. I've been exposed to alot of technologies while working in this project. I've understood the flexibility of python and many usecases this language has. 
-
-## FUTURE
-I've got a strong mathematics background so things have been pretty digestible till this point. 
-From this point onwards I will shift my focus into the world of NLP's.  
