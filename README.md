@@ -108,7 +108,7 @@ I'll mention the important libraries used in this code.
     Implementation Note:
     Use these transforms directly since they ensure that the images are in the correct format for the *EfficientNet model*. If you have new custom images for training, ensure they have sufficient resolution and are **not overly compressed.**
 
-3. # Creating DataLoaders
+# 3. Creating DataLoaders
 
     DataLoader Initialization:
     The function data_setup.create_dataloaders is called with:
@@ -133,7 +133,7 @@ I'll mention the important libraries used in this code.
 
         Ensure that each class (pizza, steak, sushi) has a diverse set of images (different angles, lighting, and backgrounds) in both the training and testing subfolders.
 
-4. # Setting Up the Pretrained Model
+#4.  Setting Up the Pretrained Model
 
     - **Loading the Model:**
     The code loads a pretrained EfficientNet-B0 model from `torchvision.models`, I've used transform pipeline (weight) from pretrained model .
@@ -155,7 +155,7 @@ I'll mention the important libraries used in this code.
 
         The updated `NUM_CLASSES` will automatically adjust the final layer.
 
-5. # Training the Model
+#5.  Training the Model
 
     Training Routine:
     With the model set up, the script:
@@ -176,7 +176,7 @@ I'll mention the important libraries used in this code.
 
         Augmentation (Optional): You might want to add data augmentation (cropping, flipping) if you have a limited number of images per class.
 
-6. # Custom Image Inference
+#6.  Custom Image Inference
 
     **Downloading/Ingesting a Custom Image:**
     After training, the script checks for a custom image file (04-pizza-dad.jpeg) in the Data folder.
